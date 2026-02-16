@@ -7,16 +7,17 @@ sample output : 6
 
 sample input : 45
 sample output : 2
+'''
+# digits = int(input("Enter the number: "))
+# count = 0 
+# while digits > 0:
+#     count += 1
+#     digits //= 10
+# print("Number of digits: ", count)
 
-digits = int(input("Enter the number: "))
-count = 0 
-while digits > 0:
-    count += 1
-    digits //= 10
-print("Number of digits: ", count)
+# print(len(str(digits))) # Alternative method
 
-print(len(str(digits))) # Alternative method
-
+'''
 sample input : 1565
 sample output : 17
 
@@ -59,8 +60,15 @@ sample output : 6
 sample input : 786
 sample output : 9
 '''
+# n = int(input("Enter the number: "))
+# s = 0
+# while n > 9:
+#     n = sum(map(int, str(n)))
+# print(n)
+
 n = int(input("Enter the number: "))
-s = 0
-while n > 9:
-    n = sum(map(int, str(n)))
-print(n)
+rev = 0
+while n > 0:
+    rev = rev * 10 + n % 10
+    n //= 10    
+print("Reversed number: ", rev) 
