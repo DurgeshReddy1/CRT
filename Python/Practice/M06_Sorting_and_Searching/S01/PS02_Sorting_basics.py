@@ -8,4 +8,10 @@ def Bubble_Sort(nums):
 print(Bubble_Sort(list(map(int,input().split()))))
 
 def Selection_Sort(nums):
-    
+    n = len(nums)
+    for i in range(n):
+        pos = i
+        for j in range(i+1,n):
+            
+
+print(Selection_Sort([12,5,25,10,30]))
